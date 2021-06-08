@@ -1,0 +1,42 @@
+@import '../../styles/colors';
+
+.cardWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vmin;
+  width: 100%;
+  border: 2px solid $color-border;
+  border-radius: 10px;
+  text-align: left;
+  color: $color-white;
+  background: $color-black;
+  overflow: hidden;
+
+  &__currencyDetails {
+    padding-left: 2vmin;
+  }
+  &__currencyTotal {
+    flex-grow: 10;
+    text-align: right;
+    padding-right: 1vmin;
+  }
+  .button__remove {
+    flex-grow: 0;
+    font-size: 2vw;
+    color: $color-white;
+    background: $color-black;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5vh;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    &:hover{
+      color: $color-border;
+    }
+  }
+}
